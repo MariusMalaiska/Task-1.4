@@ -1,0 +1,65 @@
+.Card{
+position: relative;
+width: 250px;
+margin:  10px ;
+background-color: #fffdff;
+overflow: hidden;
+
+&--picture{
+    height: 200px;
+    width: min-content;
+    display: flex;
+    &--carousel{
+        display: flex;
+   transition: transform 0.5s;
+    }
+}
+
+&--image{
+    position: relative; 
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+&--info{
+    box-sizing: border-box;
+    padding: 10px;
+
+&--price{
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f2f0f2;
+    color: #b8c7ba;
+    font-size: 18px;
+    font-weight: 600;
+}
+}
+.Arrow {
+    position: absolute; 
+    height: 20px;
+    width: 20px;
+    border-top: 5px solid #b8c7ba;
+    border-left:5px solid #b8c7ba;
+    border-radius: 4px;
+    z-index: 
+    1;
+}
+.Left{
+   top: 100px;
+    left: 15px;
+    transform: rotate(-40deg);
+}
+
+.Right{
+   top: 100px;
+    right: 15px;
+    transform: rotate(140deg);
+}
+.Arrow:hover {
+border-color:  #f2f0f2;
+
+}
+
+}
